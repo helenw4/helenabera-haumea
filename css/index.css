@@ -7,16 +7,12 @@ h1 {
     text-decoration: underline; 
     font-weight: 900;
     font-style: oblique;
-    border: 5px solid yellow;
-  
- 
+    padding-top: 15px;
 }
+
 h1:hover{
-    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
-    color: black; 
-    font-size:88px;
-    transition: all 500ms;
-    font-size-adjust: 20px;
+    color: yellow;
+    font-size: 100px;
 }
 
 section{
@@ -52,4 +48,34 @@ ul > li:hover{
     font-size-adjust: 20px;
     color: greenyellow; 
     font-style: oblique;
+    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px; 
+    border: 5px solid yellow;
+    padding-bottom: 20px;
+}
+.navBar:hover{
+    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
+    color: black; 
+    font-size:88px;
+    transition: all 500ms;
+    font-size-adjust: 20px;
+}
+.proton, .wb {
+    display: flex;
+    border: 2px solid yellow;
+    justify-content: flex-start;
+    padding-left: 520px;
+    gap: 150px;
+}
+.roles{
+    color: yellow; 
+}
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: left;
 }
