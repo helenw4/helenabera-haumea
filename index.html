@@ -4,6 +4,106 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Helen's Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="navBar">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Helen Abera</h1>
+
+        <section id="About" class="heading-color">
+            <h2>About</h2>
+            <p class="intro">Hello! My name is Helen and I am an apsiring software developer who loves to learn and code. I am excited to grow and share this experience with others.</p>
+            <img src="headshot.jpg" id="helenP" width="250" height="350px" alt="Headshot of Helen" id="profile-pic">
+        </section>
+           
+        <section>
+            <h2 id="mySkills" class="heading-color">Skills</h2>
+        </section>
+
+        <section>
+            <h2 id="myProjects" class="heading-color">Projects</h2>
+        </section>
+
+        <section id="Experience" class="heading-color">
+            <h2>Experience</h2>
+            <div class="role-container">
+                <div class="role-listed">
+                    <h3 class="time-served">October 2016 - November 2018</h3>
+                    <div class="first-role">
+                        <h3 class="role-experience">Program Coordinator</h3>
+                        <p class="role-des">Acted as primary contact for the clinic providers with the hospital, patient and family, referring physicians, outside agencies, staff from outside hospitals and general public by providing information regarding Harborview Medical Center services.</p>
+                    </div>
+                </div>
+            <div class="role-container">
+                <div class="role-listed">
+                    <h3 class="time-served">July 2019 - January 2024</h3>
+                    <div class="first-role">
+                        <h3 class="role-experience">Visual Effects Coordinator</h3>
+                        <p class="role-des">Responsible for overseeing the day-to-day operations of our Visual Effects (VFX) Production Support teams across WB and HBO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </section>      
+
+        <section id="Connect" class="heading-color">
+            <h2>Connect</h2>
+            <ul class="contact">
+                <li>Helenaberauw@gmail.com</li>
+                <li>
+                    <a href="https://github.com/helenw4">My GitHub</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label for="usersName">Name</label>
+                <input type="text" name="usersName" id="usersName" required="true"><br>
+                <label for="usersEmail">Email</label>
+                <input type="email" name="usersEmail" id="usersEmail" required="true"><br>
+                <label for="usersMessage">Message</label>
+                <textarea name="usersMessage" id="usersMessage" required="true"></textarea><br>
+                <button type="submit">Submit</button><br>
+            </form>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+                <ul>
+
+                </ul>
+
+        </section>
+
+        <script src="index.js"></script> 
+    </body>
+
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Helen's Website</title>
         <link rel="stylesheet" href="css/index.css">
     </head>
 
