@@ -1,8 +1,25 @@
-/* for mobile */ 
-
+/* for Mobile */ 
 html {
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
-} 
+    background-color: greenyellow;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px; 
+    font-size: 25px;
+    border: 5px solid yellow;
+    padding-bottom: 20px;
+}
+.navBar:hover{
+    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
+    color: black; 
+    font-size:88px;
+    font-size-adjust: 20px;
+    transition: all 500ms;
+    justify-content: space-between;
+}
 h1 {
     color: white; 
     text-align: center;
@@ -13,73 +30,320 @@ h1 {
 }
 
 h1:hover{
-    color: yellow;
+    color: red;
     font-size: 100px;
 }
-
-section{
-    padding: 20px;
-}
 h2{
+    font-weight: 700;
+    font-size: 3em;
     color: rgb(15, 227, 15); 
     border: 2px solid yellow; 
     width: 125px;
-    padding-left: 5px;
-   
+    padding-left: 17px;
+    padding-right: 170px;
 }
+.intro{
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+} 
 h2:hover {
     background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0)); 
     color: black; 
 }
-li{
+.role-container{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-p,li{
-    color: yellow; 
-}
-a {
-    color :yellow; 
-    margin-top: 10px;
-}
-h2 + li {
-    margin-bottom: 10px;
-}
-ul > li:hover{
-    font-size:88px;
-    transition: all 500ms;
-    font-size-adjust: 20px;
-    color: greenyellow; 
-    font-style: oblique;
-    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
-}
-.navBar{
+.role-listed{
     display: flex;
-    justify-content: space-around;
-    padding: 10px; 
+    flex-direction: row;
+    background-color: orange;
+    border-radius: 20px; 
+    padding: 20px; 
+    width: 500px; 
+
+}
+.first-role{
+    display: flex;
+    flex-direction: column;
+
+}
+.time-served{
+    font-weight: 700;
+    margin-right: 1em;
+    min-width: fit-content;
+}
+.contact a {
+    display: flex;
+    list-style: none;
+    padding: 20px; 
+    margin: 20px; 
+}
+@media (max-width: 500px) {
+    html {
+        background: rgb(228, 169, 228);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navBar {
+        background: lightgreen;
+    }
+
+    h1 {
+        color: blue;
+    }
+    .intro {
+        color: blue; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .role-container {
+        background-color: lightgreen;
+    }
+    h1 {
+        color: blue;
+    }
+    .role-listed,
+    .second-role {
+        background-color: rgb(255, 98, 0);
+        font-family: 'Times', serif;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .role-listed,
+    .second-role {
+        background-color: red;
+        font-family: 'Times', serif;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* For Desktop */
+@media only screen and (min-width: 769px) {
+    .role-listed,
+    .second-role {
+        background-color: blue;
+        font-family: 'Times', serif;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 25px;
     border: 5px solid yellow;
     padding-bottom: 20px;
 }
-.navBar:hover{
-    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0)); 
-    color: black; 
-    font-size:88px;
-    transition: all 500ms;
+
+.navBar:hover {
+    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0));
+    color: black;
+    font-size: 88px;
     font-size-adjust: 20px;
+    transition: all 500ms;
 }
-.proton, .wb {
-    display: flex;
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    font-style: oblique;
+    padding-top: 15px;
+}
+
+h1:hover {
+    color: yellow;
+    font-size: 100px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3em;
+    color: rgb(15, 227, 15);
     border: 2px solid yellow;
-    justify-content: flex-start;
-    padding-left: 520px;
-    gap: 150px;
+    width: 125px;
+    padding-left: 17px;
+    padding-right: 170px;
 }
-.roles{
-    color: yellow; 
+
+.intro {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 600;
 }
-.contact {
-   display: flex;
-   flex-direction: column;
-   align-items: left;
+
+h2:hover {
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
+    color: black;
+}
+
+.role-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.role-listed {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+.first-role {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-served {
+    font-weight: 700;
+    margin-right: 1em;
+    min-width: fit-content;
+}
+
+.contact a {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    .role-container {
+        display: grid;
+        grid-template-columns: 225px;
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 500px) {
+    .role-container {
+        display: grid;
+        grid-template-columns: 500px;
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        background-color: green;
+    }
+
+    h1 {
+        color: red;
+        font-weight: 300;
+        font-style: inherit;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        color: rgb(15, 227, 15);
+        border: 2px solid yellow;
+        width: 125px;
+        padding-left: 5px;
+    }
+
+    h2:hover {
+        background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
+        color: black;
+    }
+
+    li {
+        display: flex;
+    }
+
+    p,
+    li {
+        color: yellow;
+    }
+
+    a {
+        color: yellow;
+        margin-top: 10px;
+    }
+
+    h2 + li {
+        margin-bottom: 10px;
+    }
+
+    ul > li:hover {
+        font-size: 88px;
+        transition: all 500ms;
+        font-size-adjust: 20px;
+        color: greenyellow;
+        font-style: oblique;
+        background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0));
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border: 5px solid yellow;
+        padding-bottom: 20px;
+    }
+
+    .navBar:hover {
+        background: linear-gradient(90deg, #00ff00, rgb(255, 0, 0));
+        color: black;
+        font-size: 88px;
+        transition: all 500ms;
+        font-size-adjust: 20px;
+    }
+
+    .proton,
+    .wb {
+        display: flex;
+        border: 2px solid yellow;
+        justify-content: flex-start;
+        gap: 150px;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    img {
+        height: 150px;
+        width: 200px;
+    }
+
+    #helenP {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 
